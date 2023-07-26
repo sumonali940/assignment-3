@@ -50,8 +50,8 @@
                 </div>
             </div>
             <div class="navbar-center">
-                <a class="flex flex-row items-center text-xl lg:text-4xl text-black lg:text-white font-bold"><img class="w-8 lg:w-12"
-                        src="images/logo.png" alt=""> &nbsp; &nbsp;Fruit Burst</a>
+                <a class="flex flex-row items-center text-xl lg:text-4xl text-black lg:text-white font-bold"><img
+                        class="w-8 lg:w-12" src="images/logo.png" alt=""> &nbsp; &nbsp;Fruit Burst</a>
             </div>
             <div class="navbar-end hidden lg:flex">
                 <div class="form-control"><input type="text" placeholder="Search here"
@@ -203,7 +203,7 @@
                     <div class="border-b-2 bg-slate-500 w-full my-5"></div>
                     <p class="text-base font-medium">Apples</p>
                     <div class="card-actions">
-                        <button class="btn btn-primary">Buy Now</button>
+                        <button class="btn btn-primary" onclick="my_modal_1.showModal()">Buy Now</button>
                     </div>
                 </div>
             </div>
@@ -215,7 +215,7 @@
                     <h2 class="card-title">Shoes!</h2>
                     <p>If a dog chews shoes whose shoes does he choose?</p>
                     <div class="card-actions">
-                        <button class="btn btn-primary">Buy Now</button>
+                        <button class="btn btn-primary" onclick="my_modal_2.showModal()">Buy Now</button>
                     </div>
                 </div>
             </div>
@@ -227,7 +227,7 @@
                     <h2 class="card-title">Shoes!</h2>
                     <p>If a dog chews shoes whose shoes does he choose?</p>
                     <div class="card-actions">
-                        <button class="btn btn-primary">Buy Now</button>
+                        <button class="btn btn-primary" onclick="my_modal_3.showModal()">Buy Now</button>
                     </div>
                 </div>
             </div>
@@ -239,7 +239,8 @@
                     <h2 class="card-title">Shoes!</h2>
                     <p>If a dog chews shoes whose shoes does he choose?</p>
                     <div class="card-actions">
-                        <button class="btn btn-primary">Buy Now</button>
+                        <button class="btn btn-primary" onclick="my_modal_4.showModal()">Buy Now</button>
+
                     </div>
                 </div>
             </div>
@@ -247,6 +248,59 @@
         <div class="flex justify-center items-center">
             <button class="btn bg-[#F85559] text-white outline-none border-none rounded-lg capitalize">Shop All</button>
         </div>
+        <!-- Popup Section -->
+        <!-- Popup One -->
+        <dialog id="my_modal_1" class="modal modal-middle sm:modal-middle">
+            <form method="dialog" class="modal-box">
+                <div class="card w-96 bg-neutral text-neutral-content">
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title">Cookies!</h2>
+                      <p>We are using cookies for no reason.</p>
+                      <div class="card-actions justify-end">
+                        <button class="btn btn-primary">Accept</button>
+                        <button class="btn btn-ghost">Deny</button>
+                      </div>
+                    </div>
+                  </div>
+                <div class="modal-action">
+                    <!-- if there is a button in form, it will close the modal -->
+                    <button class="btn">Close</button>
+                </div>
+            </form>
+        </dialog>
+        <!-- Popup two -->
+        <dialog id="my_modal_2" class="modal modal-middle sm:modal-middle">
+            <form method="dialog" class="modal-box">
+                <h3 class="font-bold text-lg">Hello!</h3>
+                <p class="py-4">Press ESC key or click the button below to close</p>
+                <div class="modal-action">
+                    <!-- if there is a button in form, it will close the modal -->
+                    <button class="btn">Close</button>
+                </div>
+            </form>
+        </dialog>
+        <!-- Popup three -->
+        <dialog id="my_modal_3" class="modal modal-middle sm:modal-middle">
+            <form method="dialog" class="modal-box">
+                <h3 class="font-bold text-lg">Hello!</h3>
+                <p class="py-4">Press ESC key or click the button below to close</p>
+                <div class="modal-action">
+                    <!-- if there is a button in form, it will close the modal -->
+                    <button class="btn">Close</button>
+                </div>
+            </form>
+        </dialog>
+        <!-- Popup four -->
+        <dialog id="my_modal_4" class="modal modal-middle sm:modal-middle">
+            <form method="dialog" class="modal-box">
+                <h3 class="font-bold text-lg">Hello!</h3>
+                <p class="py-4">Press ESC key or click the button below to close</p>
+                <div class="modal-action">
+                    <!-- if there is a button in form, it will close the modal -->
+                    <button class="btn">Close</button>
+                </div>
+            </form>
+        </dialog>
     </section>
     <!-- Del of the day section end -->
 
